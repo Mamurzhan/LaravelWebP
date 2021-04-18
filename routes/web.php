@@ -15,9 +15,7 @@ use App\Http\Controllers\EmailController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[Sdu12Controller::class,'users']);
 Route::get('/add-story',[Sdu12Controller::class,'addStory']);
 Route::post('/add-story',[Sdu12Controller::class,'storeStory'])->name('story.store');
 Route::get('/all-user',[Sdu12Controller::class,'users']);
