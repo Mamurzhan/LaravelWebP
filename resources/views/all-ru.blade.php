@@ -1,4 +1,4 @@
-<title>Document</title>
+<title>Story</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -8,12 +8,11 @@
     
       
       <nav>
-        <a href="/home">Домой</a>
-        <a href="/sendemail">Свяжитесь</a>
-        <a href="/add-story"> Добавить/и</a>
-        <a href="/qus">Ответить</a>
-
-        <a href="/all-user">En</a>
+        <a href="/home">Home</a>
+        <a href="/qus">Answer Qus/s </a>
+        <a href="/sendemail">Contact us</a>
+        <a href="/add-story"> Add story</a>
+        <a href="/all-ru">Ru</a>
         <div class="menu fix"></div>
       </nav>
 
@@ -74,7 +73,7 @@
 <div class="body">
 <div class="section full-height">
   <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
-  <label for="modal-btn">O нас <i class="uil uil-expand-arrows"></i></label> 		
+  <label for="modal-btn">About Us <i class="uil uil-expand-arrows"></i></label> 		
   <div class="modal">		
     <div class="modal-wrap">	
   <img src="https://assets.codepen.io/1462889/sl3.jpg" alt="">	
@@ -107,9 +106,6 @@
                 </div>
                 <div>
                   <h2>{{$sdu1->name}}<br></h2><h6><span><a href="/sendemail">{{$sdu1->email}}</span></h6></a>
-                 
-                    
-        
                 </div>
               </div>
               <div class="more-btn">
@@ -162,7 +158,7 @@ p{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.7;
-	color: #1d1e20;
+	color: #080809;
 }
 
 .section{
@@ -381,27 +377,27 @@ section{
        }
  
  nav .fix, nav a:nth-child(1):hover~.menu{
-    left: 20px; width: 100px;
+    left: 30px; width: 100px;
      background-color: #03a9f4;
     }
     nav a:nth-child(2):hover~.menu{
-    left: 135px; width: 110px;
+    left: 150px; width: 110px;
      background-color: #d5cf24;
     } nav a:nth-child(3):hover~.menu{
-    left: 270px; width: 120px;
+    left: 290px; width: 100px;
      background-color: #d52424;
     } nav a:nth-child(4):hover~.menu{
-    left: 405px; width: 120px;
+    left: 410px; width: 100px;
      background-color: #24d541;
     } nav a:nth-child(5):hover~.menu{
-    left: 500px; width: 140px;
+      left: 520px; width: 110px;
      background-color: #0d939d;
     }
 nav{
 
  position: relative;
-  width: 630px; height:50px;
-   margin: 30px 370px;
+ width: 670px; height:50px;
+   margin: 30px 310px;
     background-color: #333; 
     text-align: center; 
     border-radius: 8px;
@@ -423,9 +419,9 @@ nav{
  }nav a:nth-child(3){
    width: 130px;
  }nav a:nth-child(4){
-   width: 140px;
- }nav a:nth-child(5){
    width: 100px;
+ }nav a:nth-child(5){
+   width: 110px;
  }
 
 section .card{

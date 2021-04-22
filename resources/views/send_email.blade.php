@@ -14,7 +14,7 @@
 <body>
 
 <br/>
-<div class="bg-dark text-light" style="padding: 100px 100px 100px 100px;">
+<div class=" text-dark" style="padding: 100px 100px 100px 100px;">
 
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -39,7 +39,7 @@
 <div class="card-header">
     Edit Story
 </div>
-    <form class="bg-dark " method="post" action="{{url('sendemail/send')}}">
+    <form  method="post" action="{{url('sendemail/send')}}">
         {{ csrf_field()}}
           <div class="form-group">
             <label for="name" class="col-form-label">Name</label>
@@ -62,17 +62,12 @@
 </div></div>
 </div></div>
 <style>
-    .box{
-        width: 600px;
-        margin: 0 auto;
-        border:1px solid #ccc;
-    }
-    .has-error{
-        border-color:#cc0000;
-        background-color:#ffff99;
-    }
-    .imgb{
-        background-image: url("12.jpg")
+   
+    body{
+        background-image: url('https://assets.codepen.io/1462889/back-page.svg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 101%;
     }
 </style>
 </body>

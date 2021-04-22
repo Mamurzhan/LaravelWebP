@@ -33,6 +33,28 @@ public function users(){
     $sduies = Sdu12::all();
 
     return view('all-users',compact('sduies'));
+
+}
+public function users2(){
+
+    $sduies = Sdu12::all();
+
+    return view('home',compact('sduies'));
+}public function users3(){
+
+    $sduies = Sdu12::all();
+
+    return view('ru',compact('sduies'));
+}public function users5(){
+
+    $sduies = Sdu12::all();
+
+    return view('all-users',compact('sduies'));
+}public function users4(){
+
+    $sduies = Sdu12::all();
+
+    return view('all-ru',compact('sduies'));
 }
 public function editUser($id){
     $sdu12 =Sdu12::find($id);

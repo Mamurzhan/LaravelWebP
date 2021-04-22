@@ -15,7 +15,14 @@ use App\Http\Controllers\EmailController;
 |
 */
 
-Route::get('/',[Sdu12Controller::class,'users']);
+Route::get('/home',[Sdu12Controller::class,'users2']);
+Route::get('/ru',[Sdu12Controller::class,'users3']);
+Route::get('/all-ru',[Sdu12Controller::class,'users5']);
+Route::get('/all-user',[Sdu12Controller::class,'users4']);
+Route::get('/',[Sdu12Controller::class,'users2']);
+Route::get('/qus',function (){
+    return view('qut');
+});
 Route::get('/add-story',[Sdu12Controller::class,'addStory']);
 Route::post('/add-story',[Sdu12Controller::class,'storeStory'])->name('story.store');
 Route::get('/all-user',[Sdu12Controller::class,'users']);
@@ -24,3 +31,4 @@ Route::post('/update-user',[Sdu12Controller::class,'updateUser'])->name('user.up
 Route::get('/delete-user/{id}',[Sdu12Controller::class,'deleteUser']);
 Route::get('/sendemail',[EmailController::class,'index']);
 Route::post('/sendemail/send',[EmailController::class,'send']);
+Route::get('/add-com/{id}',[Sdu12Controller::class,'addComment'])->name('add.update');
